@@ -1,0 +1,27 @@
+#popup {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 25%;
+	height: 70%;
+	background-color: rgb(225,225,225);
+	color: rgb(159,159,159);
+	font-size: 12px;
+}
+
+.popup-block {
+	width: 98%;
+	margin-top: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: white;
+}
+
+.popup-disclaimer {
+	padding-top: 2em;
+	padding-left: 3px;
+	padding-right: 25px;
+}
