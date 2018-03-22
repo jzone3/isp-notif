@@ -2,13 +2,22 @@
 <html>
 <head>
 	<title>ISP Notification Mockups</title>
-	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link rel="stylesheet" type="text/css" href="popupstyles.css" />
+	<link rel="stylesheet" type="text/css" href="berkeleystlyes.css" />
 </head>
 <body>
 <script type="text/javascript">
 function popup() {
 	var notif = document.getElementById('popup');
 	notif.style.display = "block";
+}
+function berkeleypopup() {
+	var notif = document.getElementById('berkeleypopup');
+	notif.style.display = "block";
+}
+function close_berkeleypopop() {
+	var notif = document.getElementById('berkeleypopup');
+	notif.style.display = "none";
 }
 function fullpopup() {
 	var notif = document.getElementById('fullpopup');
@@ -24,24 +33,25 @@ function newtab() {
 }
 </script>
 <button onclick="popup()">Small Pop-Up</button><br/>
+<button onclick="berkeleypopup()">Small Berkeley Pop-Up</button><br/>
 <button onclick="fullpopup()">Full-Page Pop-Up</button><br/>
 <button onclick="walledgarden()">Walled Garden</button><br/>
 <button onclick="newtab()">New Tab</button><br/>
 <div id="popup" class="popup" style="display:none;">
-	<div class="popup-disclaimer"><a href="#">Remove the bot</a> with Constant Guard® by XFINITY</div>
-	<div class="popup-disclaimer my-account"><a href="#">My Account</a></div>
+	<div class="popup-disclaimer"><a href="https://constantguard.xfinity.com/products-and-services/bot-detection-and-removal/">Remove the bot</a> with Constant Guard® by XFINITY</div>
+	<div class="popup-disclaimer my-account"><a href="www.xfinity.com">My Account</a></div>
 	<div class="popup-block top-logo">
 		<img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Xfinity_logo.svg" />
 	</div>
 	<div class="popup-block main">
 		<div class="main-tagline">We've detected some not-so-great software</div>
 		<div class="caption">One or more of your devices may have been infected with a bot. Don't worry, since you have Constant Guard by XFINITY, you're just a few steps away from sorting it out.</div>
-		<div class="remove-btn">Remove the bot</div>
+		<a href="https://constantguard.xfinity.com/products-and-services/bot-detection-and-removal/" class="big-btn"><div class="remove-btn"">Remove the bot</div></a>
 		<div class="caption bottom-space">
 			<span class="title">Wait, what's a bot?</span><br/>
 			Bots are bad. They send spam, direct you to phishing sites and, in some cases, monitor and log your personal information.
 			<br/><br/>
-			See how Constant Guard <a href="#">works</a> or <a href="#">learn more</a> about XFINITY's Internet policies.
+			See how Constant Guard <a href="https://constantguard.xfinity.com/products-and-services/bot-detection-and-removal/">works</a> or <a href="https://constantguard.xfinity.com/security-basics/threats-and-prevention/">learn more</a> about XFINITY's Internet policies.
 		</div>
 	</div>
 	<div class="popup-block logos">
@@ -54,14 +64,34 @@ function newtab() {
 	<div class="popup-disclaimer last-element">
 		This is a service-related email. Comcast will occasionally send you service-related emails to inform you of service upgrades or new benefits.
 		<br/><br/>
-		Please do not reply to this email, it is not monitored. If you'de like to contact us, please visit our website <a href="#">here</a>.
+		Please do not reply to this email, it is not monitored. If you'de like to contact us, please visit our website <a href="https://www.xfinity.com/support/">here</a>.
 		<br/><br/>
-		Comcast respects your privacy. For a complete description of our privacy policy, <a href="#">click here</a>.
+		Comcast respects your privacy. For a complete description of our privacy policy, <a href="https://my.xfinity.com/privacy/">click here</a>.
 		<br/><br/>
 		(C) 2015 Comcast. All rights reserved. All trademarks are the property of their respective owners.
 		<br/><br/>
 		Comcast Cable, One Comcast Center, 1701 JFK Boulevard, Philadelphia, PA 19103<br/>
 		Attn. Email Communications
+	</div>
+</div>
+<div id="berkeleypopup" style="display:block;">
+	<div class="wrapper">
+		<div class="top"><img src="https://www.berkeley.edu/images/uploads/logo-ucberkeley-white.png" class="berkeley-logo"><img class="close-btn" onclick="close_berkeleypopop()" src="https://upload.wikimedia.org/wikipedia/commons/7/72/VisualEditor_-_Icon_-_Close_-_white.svg"></div>
+		<div class="text">
+			<div class="emphasize">We have detected harmful software on your device.</div>
+			<br>
+			One or more of your devices may have been infected with a bot. Bots send spam, direct you to phishing sites and, in some cases, monitor and log your personal information. 
+			<br><br>
+			Don't worry, you're just a few steps away from sorting it out.
+			<a href="https://security.berkeley.edu/resources/software/anti-malware" class="big-btn"><div class="remove-btn"">Remove the Bot</div></a>
+			<br>
+			<div class="signature">
+			<br>
+			UC Berkeley IT Department<br>
+			<a href="https://technology.berkeley.edu/">https://technology.berkeley.edu/</a><br>
+			<br>
+			</div>
+		</div>
 	</div>
 </div>
 <div id="fullpopup" class="fullpopup popup" style="display:none;">
