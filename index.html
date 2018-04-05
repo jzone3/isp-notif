@@ -4,6 +4,7 @@
 	<title>ISP Notification Mockups</title>
 	<link rel="stylesheet" type="text/css" href="popupstyles.css" />
 	<link rel="stylesheet" type="text/css" href="berkeleystlyes.css" />
+	<link rel="stylesheet" type="text/css" href="comcaststyles.css" />
 </head>
 <body>
 <script type="text/javascript">
@@ -11,12 +12,20 @@ function popup() {
 	var notif = document.getElementById('popup');
 	notif.style.display = "block";
 }
-function berkeleypopup() {
-	var notif = document.getElementById('berkeleypopup');
+function comcastpopup() {
+	var notif = document.getElementById('comcastpopup');
 	notif.style.display = "block";
 }
 function close_berkeleypopop() {
 	var notif = document.getElementById('berkeleypopup');
+	notif.style.display = "none";
+}
+function berkeleypopup() {
+	var notif = document.getElementById('berkeleypopup');
+	notif.style.display = "block";
+}
+function close_comcastpopop() {
+	var notif = document.getElementById('comcastpopup');
 	notif.style.display = "none";
 }
 function fullpopup() {
@@ -33,6 +42,7 @@ function newtab() {
 }
 </script>
 <button onclick="popup()">Small Pop-Up</button><br/>
+<button onclick="comcastpopup()">Small Comcast Pop-Up</button><br/>
 <button onclick="berkeleypopup()">Small Berkeley Pop-Up</button><br/>
 <button onclick="fullpopup()">Full-Page Pop-Up</button><br/>
 <button onclick="walledgarden()">Walled Garden</button><br/>
@@ -72,6 +82,32 @@ function newtab() {
 		<br/><br/>
 		Comcast Cable, One Comcast Center, 1701 JFK Boulevard, Philadelphia, PA 19103<br/>
 		Attn. Email Communications
+	</div>
+</div>
+<div id="comcastpopup" style="display:none;">
+	<div class="wrapper">
+		<div class="top"><img src="xfinity-logo.png" class="xfinity-logo">
+			<img class="close-btn" onclick="close_comcastpopop()" src="https://upload.wikimedia.org/wikipedia/commons/7/72/VisualEditor_-_Icon_-_Close_-_white.svg">
+		</div>
+		<div class="text">
+			<div class="emphasize">ConstantGuard Bot Alert</div>
+			<br>
+			<div class="starting-line">Dear XFINITY Customer,</div>
+			<br>
+			Constant Guard<sup>&reg;</sup> from XFINITY has detected a bot on your computer(s).<br><br>
+			Click the "TAKE ACTION NOW" button to get important information on next steps.
+			<a href="https://security.berkeley.edu/resources/software/anti-malware" class="big-btn"><div class="remove-btn"">TAKE ACTION NOW</div></a>
+			<br>
+		</div>
+		<div class="faq-logo">
+			<img id="comcast-bot-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Comcast_Logo.svg" />
+			<div class="links">
+			<a href="#">PRIVACY POLICY</a>&nbsp;&nbsp;&nbsp;<a href="#">TERMS OF SERVICE</a>&nbsp;&nbsp;&nbsp;<a href="#">FAQs</a>
+			</div>
+		</div>
+		<div class="bottom">
+			╲╱
+		</div>
 	</div>
 </div>
 <div id="berkeleypopup" style="display:none;">
