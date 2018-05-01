@@ -1,0 +1,130 @@
+#comcastpopup {
+	position: absolute;
+	top: 200px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#comcastpopup .wrapper {
+	width: 615px;
+	/*height: 250px;*/
+	margin-left: auto;
+	margin-right: auto;
+	border: solid;
+	border-width: 1px;
+	border-color: black;
+}
+
+#comcastpopup .top {
+	background-color: black;
+	height: 60px;
+	line-height: 60px;
+}
+
+#comcastpopup .bottom {
+	background-color: black;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+	text-align: center;
+	font-size: 10px;
+}
+
+#comcastpopup .xfinity-logo {
+	height: 35px;
+	padding-left: 20px;
+	vertical-align: middle;
+}
+
+#comcastpopup .close-btn {
+	cursor: pointer;
+	height: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    float: right;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#comcastpopup .text {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 16px;
+	font-weight: 300;
+	color: black;
+}
+
+#comcastpopup .text .emphasize {
+    padding-top: 10px;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+#comcastpopup .starting-line {
+	font-size: 19px;
+	font-weight: normal;
+}
+
+#comcastpopup .explanation {
+	color: rgb(121, 145, 168);;
+	font-size: 13px;
+}
+
+#comcastpopup a, a:hover, a:visited, a:active {
+	color: black;
+}
+
+#comcastpopup .signature {
+	text-align: right;
+	font-size: 13px;
+}
+
+#comcastpopup #comcast-bot-logo {
+	float: right;
+	margin-top: -15px;
+	height: 35px;
+}
+
+#comcastpopup .faq-logo {
+	padding-top: 10px;
+	padding-bottom: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 15px;
+	font-weight: 300;
+	margin-top: 20px;
+}
+
+#comcastpopup .faq-logo a {
+	text-decoration: none;
+}
+
+#comcastpopup .remove-btn {
+	background-color: rgb(0, 113, 179);
+	text-align: center;
+	width: 200px;
+	line-height: 41px;
+	height: 41px;
+	font-size: 15px;
+	color: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.remove-btn a {
+	color: white !important;
+}
+
+.big-btn, .big-btn:active, .big-btn:hover, .big-btn:visited {
+	text-decoration: none;
+	color: rgb(222, 238, 247);
+}
